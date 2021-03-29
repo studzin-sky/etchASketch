@@ -3,3 +3,20 @@ html {
     font-family: Arial, Helvetica, sans-serif; 
     background-color: rgb(180, 247, 154);
 }
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+  }
+
+.grid-element {
+    border: 1px solid;
+}
