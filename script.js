@@ -50,7 +50,8 @@ range.addEventListener('click', function(){
   if (number !== null) {
     number = parseInt(number);
     if (number < 2 || number > 64 || Number.isNaN(number)) {
-      alert('Enter a correct number!');
+      alert('Enter a correct number! ///lo@d1ng d3f@ult...');
+      setDefaultGrid(16);
     } else {
       setDefaultGrid(number);
     }
