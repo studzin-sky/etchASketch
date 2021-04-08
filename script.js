@@ -11,11 +11,13 @@ function setDefaultGrid(x) {
   fillGrid(x);
 }
 
+//create a function to create the grid columns
 function setGridSize(size) {
   container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 }
 
 
+// create a function for the grid 
 function fillGrid(size) {
     for (let i = 0; i < size * size; i++) {
       const gridElement = document.createElement("div");
