@@ -1,5 +1,6 @@
-const container = document.querySelector('#container');
-
+const container = document.getElementById('container');
+const erase = document.getElementById('erase');
+const userGrid = document.getElementsByClassName('grid-element');
 
 window.addEventListener('load', setDefaultGrid);
 
@@ -28,3 +29,10 @@ function generateRandomColor() {
     let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     this.style.backgroundColor = randomColor;
 }
+
+// create a function and an event listener to reset colors on a click
+erase.addEventListener('click', function(){
+  for (let i=0; i < userGrid.length; i++) {
+    userGrid[i].style.backgroundColor = 'inherit';
+  }
+});
